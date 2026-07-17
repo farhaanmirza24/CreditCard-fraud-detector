@@ -1,0 +1,196 @@
+{% extends 'RUser/design.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 142px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style6 {color: #FF0000}
+.style8 {font-weight: bold}
+.style10 {color: #FFFF00}
+        .style12 {color: #FFFF00; font-weight: bold; }
+        .style13 {
+	color: #FFFF00;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p align="center" class="text-uppercase pull-center style1">Detection Of  Credit Card Transaction Type !!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="1004" align="center">
+                                  <tr>
+                                    <td height="44" colspan="4" bgcolor="#FF0000"><div align="center" class="style13">
+                                      <div align="center">ENTER ALL DATASETS DETAILS HERE !!! </div>
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="289" height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10"><br>
+                                    Enter Fid</span></strong></div></td>
+                                    <td width="201">
+                                      <div align="center">
+                                        <input type="text" name="Fid">
+                                      </div></td>
+                                    <td width="317" bgcolor="#FF0000"><div align="center"><span class="style12">Enter Trans_Date</span></div></td>
+                                    <td width="177">
+                                      <div align="center">
+                                        <input type="text" name="Trans_Date">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter CC_No</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="CC_No">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter CC_type</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="CC_type">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Trans_Type</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Trans_Type">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Amount</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Amount">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Firstname</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input type="text" name="Firstname">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Lastname</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Lastname" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Gender</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <select name="Gender">
+                                          <option>--- Select ---</option>
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                        </select>
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter Age </span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Age" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter lat</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="lat" type="text" value="">
+                                      </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style12">Enter lon</span></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="lon" type="text" value="">
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><strong><span class="style10">Enter Transid</span></strong></div></td>
+                                    <td>
+                                      <div align="center">
+                                        <input name="Transid" type="text" value="">
+                                      </div></td>
+                                    <td bgcolor="#FF0000">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FFFFFF"><div align="center"></div></td>
+                                    <td><div align="center"></div></td>
+                                    <td><input name="submit" type="submit" class="style1" value="Predict"></td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                               <table height="62" border="5" align="center" bordercolor="#FF00FF">
+
+                    <tr><td width="407" bgcolor="#FFFF00"><div align="center"><strong><span class="style8 style6"><span class="text-uppercase pull-center style1">Detection Of  Credit Card Transaction Type </span>::</span></strong></div></td>
+                      <td width="305" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">------{{objs}} ------ </div></td>
+
+                        </tr>
+
+
+                      </table>
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
