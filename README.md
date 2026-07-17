@@ -1,3 +1,5 @@
+<img width="1470" height="832" alt="Screenshot 2026-07-17 at 6 57 32 PM" src="https://github.com/user-attachments/assets/684df654-9fd4-4c57-898b-90642eb606a1" />
+<img width="1470" height="834" alt="credit-card" src="https://github.com/user-attachments/assets/6a136f29-5369-437d-887d-50c68bcc6b38" />
 # Identifying Fraudulent Credit Card Transactions Using Ensemble Learning
 
 This project implements a web-based application for identifying fraudulent credit card transactions using Ensemble Learning techniques. It provides a platform where users can log in, view transaction data, and predict whether transactions are fraudulent or legitimate.
